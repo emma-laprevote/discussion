@@ -1,0 +1,291 @@
+/* CSS HEADER */
+@font-face {
+  font-family: "graff";
+  src: url("../fonts/PrizmaFine.otf");
+}
+
+nav {
+  height: 8em;
+}
+
+#nav-mobile {
+  margin: 2em 5em 0 0;
+}
+
+#factorylogo {
+  width: 20%;
+  margin: auto;
+}
+
+/* CSS PAGE ACCUEIL */
+
+aside {
+  background-color: black;
+  width: 18%;
+  min-height: 100vh;
+}
+
+#presentFactory {
+  display: flex;
+  flex-direction: row;
+}
+
+#graffiti {
+  background-image: url("../images/graff1.jpg");
+  background-size: cover;
+  width: 74em;
+  height: 40em;
+}
+
+#graffiti p {
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 7em;
+}
+
+.slogan {
+  margin: -2em 0 0 5em;
+}
+
+.p2 {
+  margin-top: -1.5em;
+}
+
+#liens {
+  margin: 7em 0 0 3em;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+#liens i {
+  font-size: 1.5em;
+  letter-spacing: 1em;
+  color: white;
+}
+
+#textbio {
+  color: white;
+  font-size: 1em;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  border-bottom: solid 1px white;
+}
+
+#music {
+  text-align: left;
+  color: white;
+  margin-top: 5em;
+}
+
+#streets,
+#slow {
+  width: 65%;
+  padding-left: 1.5em;
+}
+
+#music h6 {
+  padding: 1.5em 1em 1.5em 1em;
+}
+
+#music h5 {
+  font-size: 2em;
+  font-family: "Archivo Black", sans-serif;
+  padding-left: 0.8em;
+}
+
+#music p {
+  padding: 1em 2em 0 2em;
+  font-size: 0.9em;
+}
+
+.p3 {
+  margin-top: -0.5em;
+}
+
+.typo {
+  font-family: "graff";
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+#present {
+  display: flex;
+  flex-direction: column;
+}
+
+#biography {
+  margin-top: 10em;
+}
+
+/* CSS ARTICLE SHOP */
+
+#shop {
+  width: 35em;
+  text-align: center;
+  padding-top: 1em;
+  border-right: solid 1px black;
+}
+
+#logoflame {
+  width: 10em;
+  margin-top: -2em;
+}
+
+#shop h5 {
+  font-size: 1.4em;
+  font-family: "graff";
+}
+
+#shop h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: -0.2em;
+}
+
+#shop p {
+  padding: 0 2em 0.5em 2em;
+  margin-top: -0.2em;
+}
+
+#shop a,
+#art a,
+.expo a {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-family: "Teko", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: -0.6px;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+#spraypaint {
+  width: 15em;
+  margin-top: -2em;
+}
+
+/* CSS ARTICLE SPOTS */
+
+#art {
+  width: 35em;
+  text-align: left;
+}
+
+#boatgraff {
+  width: 39em;
+}
+
+#art h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
+  color: black;
+  padding-left: 1em;
+  margin-top: -0.1em;
+}
+
+#art h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-decoration: underline;
+  padding: 1em 0 0 2em;
+}
+
+#art p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0.5em 0 1em 0;
+  padding-left: 1.5em;
+}
+
+.p4 {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.8em;
+  margin-top: -0.1em;
+  margin: 1em 1em 0 1.5em;
+}
+
+#art a {
+  margin-left: 1em;
+}
+
+/* CSS ARTIST CORNER */
+
+.artist {
+  width: 100%;
+  background-image: url(../images/expo.jpg);
+  margin-bottom: 2em;
+  height: 15em;
+}
+
+#corner {
+  float: right;
+  padding-right: 3em;
+}
+
+.expo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#prod1,
+#prod2,
+#prod3,
+#prod4 {
+  width: 15em;
+}
+
+.prod1,
+.prod2,
+.prod3,
+.prod4 {
+  text-align: center;
+  box-shadow: 0 4px 6px 0 grey;
+  margin-bottom: 5em;
+}
+
+.prod1 p,
+.prod2 p,
+.prod3 p,
+.prod4 p {
+  margin-top: -0.5em;
+}
+
+/*CSS FOOTER */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#liens2 {
+  margin: 1em 0 0 0;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+#liens2 i {
+  font-size: 1.5em;
+  letter-spacing: 1em;
+  color: rgb(34, 34, 34);
+}
+
+footer a {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
+}
+
+footer ul {
+  margin-top: 3em;
+}
