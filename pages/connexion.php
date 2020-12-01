@@ -18,7 +18,7 @@
     <div class="nav-wrapper #000000 black">
       <img id="factorylogo" src="../images/factorylogo.png" alt="Logo The factory">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.php"><i class="large material-icons">grade</i></a></li>
+        <li><a href="../index.php"><i class="large material-icons">grade</i></a></li>
         <li><a href="inscription.php"><i class="large material-icons">person_add</i></a></li>
         <li><a href="connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
         <li><a href="profil.php"><i class="large material-icons">face</i></a></li>
@@ -40,7 +40,7 @@
         <h4 id="titleJoin2">Log In</h4>
         <p class="already">Pas encore inscrit? <a href="inscription.php">Rejoins-nous</a></p>
 
-    <form class="col s12" method="POST" action="inscription.php">
+    <form class="col s12" method="POST" action="connexion.php">
       <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">account_circle</i>
@@ -52,7 +52,7 @@
           <input id="password" type="password" name="password" class="validate" required>
           <label for="password">Password</label>
         </div>
-        <button id="buttonStyle" class="btn waves-effect N/A transparent #000000 black-text" type="submit" name="envoyer">join
+        <button id="buttonStyle" class="btn waves-effect N/A transparent #000000 black-text" type="submit" name="envoyer">Log in
         </button>
       </div>
     </form>

@@ -4,6 +4,11 @@
   src: url("../fonts/PrizmaFine.otf");
 }
 
+@font-face {
+  font-family: "graff2";
+  src: url("../fonts/SivarPro.otf");
+}
+
 nav {
   height: 8em;
 }
@@ -388,6 +393,8 @@ form {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* CSS CONNEXION */
+
 #joinus2 {
   width: 40%;
   min-height: 100vh;
@@ -399,4 +406,45 @@ form {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.5em;
   margin: 6em 0 0 2em;
+}
+
+/* CSS PROFIL */
+
+#buttonFile {
+  border: solid black 1px;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
+}
+
+#titleJoin3 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
+  margin: 2em 0 0 2em;
+}
+
+#joinus3 {
+  width: 40%;
+  min-height: 100vh;
+  background-image: url(../images/csm3.jpg);
+  background-position: center;
+}
+
+.graffUser {
+  font-size: 1.4em;
+  font-family: "graff2";
+}
+
+.big2 {
+  color: black;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 3.5em 0 0 2em;
+}
+
+.textJoin2 {
+  margin: 0 8em 0 5em;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
 }

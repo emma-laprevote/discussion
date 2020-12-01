@@ -18,7 +18,7 @@
     <div class="nav-wrapper #000000 black">
       <img id="factorylogo" src="../images/factorylogo.png" alt="Logo The factory">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.php"><i class="large material-icons">grade</i></a></li>
+        <li><a href="../index.php"><i class="large material-icons">grade</i></a></li>
         <li><a href="inscription.php"><i class="large material-icons">person_add</i></a></li>
         <li><a href="connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
         <li><a href="profil.php"><i class="large material-icons">face</i></a></li>
