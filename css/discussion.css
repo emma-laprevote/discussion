@@ -26,6 +26,12 @@ nav {
   font-size: 1em;
 }
 
+#buttonStyle2 {
+  border: solid white 1px;
+  font-family: "Teko", sans-serif;
+  font-size: 1.3em;
+}
+
 /* CSS PAGE ACCUEIL */
 
 aside {
@@ -37,6 +43,7 @@ aside {
 #presentFactory {
   display: flex;
   flex-direction: row;
+  background-color: white;
 }
 
 #graffiti {
@@ -65,8 +72,6 @@ aside {
 
 .membre {
   margin: -8em 0 0 -12em;
-  height: 5em;
-  width: 100%;
 }
 
 .membre a {
@@ -378,7 +383,7 @@ footer ul {
   margin: -0.1em 0 0 3em;
 }
 
-form {
+#ins {
   margin: 4em 3em 0 3em;
 }
 

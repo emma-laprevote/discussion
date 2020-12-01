@@ -51,7 +51,7 @@ $msg_error = "";
         <h4 id="titleJoin">Join TheFactory</h4>
         <p class="already">Déjà inscrit? <a href="connexion.php">Connecte-toi</a></p>
 
-    <form class="col s12" method="POST" action="inscription.php">
+    <form id="ins" class="col s12" method="POST" action="inscription.php">
       <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">account_circle</i>
