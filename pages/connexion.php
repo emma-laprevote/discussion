@@ -1,3 +1,13 @@
+<?php
+session_start();
+$msg_error = "";
+    require_once('../php/functions.php');
+    
+    if(isset($_POST['envoyer']))
+    {
+        $msg_error = connectLogin();
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +41,8 @@
   <main id="logJoin">
     
     <div id="joinus2">
-        <p class="big" class="flow-text">JOIN THE<br> LARGEST<br> ART<br> COMMUNITY<br>IN THE<br>WORLD</p>
-        <p class="textJoin" class="flow-text">Get free access to 370 million pieces of art. Showcase, promote, 
+        <p class="big3" class="flow-text">JOIN THE<br> LARGEST<br> ART<br> COMMUNITY<br>IN THE<br>WORLD</p>
+        <p class="textJoin3" class="flow-text">Get free access to 370 million pieces of art. Showcase, promote, 
             sell & share your work with over 48 million members.</p>
     </div>
 
@@ -54,6 +64,7 @@
         </div>
         <button id="buttonStyle" class="btn waves-effect N/A transparent #000000 black-text" type="submit" name="envoyer">Log in
         </button>
+        <?php if($msg_error != ""){echo "<p>$msg_error</p>";}?>
       </div>
     </form>
     </div>

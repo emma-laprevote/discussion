@@ -1,3 +1,9 @@
+<?php
+session_start();
+    
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,12 +73,19 @@
             <p class="p1" class="flow-text">LESS ODOR -</p>
             <p class="p2" class="flow-text">MORE</p>
             <p class="p2" class="flow-text">ACTION.</p>
+    <?php 
+    if(isset($_SESSION['login']) == "") { ?>
 
-        <div class='membre'>
+    <?php
+    } elseif (isset($_SESSION['login']) != "") {
+
+      $user = $_SESSION['login'];
+
+        echo "<div class='membre'>
             <div class='container'>
                 <div class='row'>
                     <div id='iconeuser' class='col 5 s6'>
-                        <i class='medium material-icons #ffffff white-text'>account_box</i><p id="textuser" class='#ffffff white-text'>Welcome User!</p>
+                        <i class='medium material-icons #ffffff white-text'>account_box</i><p id='textuser' class='#ffffff white-text'>Hi $user!</p>
                     </div>
                 <div id='buttonrow'>
                     <a href='pages/profil.php' class='waves-effect N/A transparent #ffffff white-text btn'><i class='material-icons left #ffffff white-text'>face</i>MON COMPTE</a>
@@ -82,7 +95,9 @@
             </div>
         </div>
         </div>
-        </div>
+        </div>";
+    }
+    ?>
 
     <article>
         <section id="shop">

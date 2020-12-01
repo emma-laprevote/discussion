@@ -40,17 +40,17 @@
         <h4 id="titleJoin3">Change your profile</h4>
         <p class="already">Modifie ton profil quand tu veux et comme tu le veux.</p>
 
-    <form class="col s12" method="POST" action="profil.php">
+    <form class="col s12" method="POST" action="profil.php" enctype="multipart/form-data">
       <div class="row">
         <div class="file-field input-field">
-            <div id="buttonFile" class="btn N/A transparent #000000 black-text">
-                <span>File</span>
-                <input type="file">
-            </div>
-            <div class="file-path-wrapper col s10">
-                <input class="file-path validate" type="text">
-            </div>
+        <div class="btn">
+            <span>File</span>
+            <input type="file">
         </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
         <div class="input-field col s11">
           <i class="material-icons prefix">account_circle</i>
           <input id="login" type="text" name="login" class="validate" required>

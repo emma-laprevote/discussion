@@ -1,3 +1,14 @@
+<?php
+$msg_error = "";
+    require_once('../php/functions.php');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+
+    if(isset($_POST['envoyer']))
+    {
+
+        $msg_error = insertInscription();
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +70,7 @@
         </div>
         <button id="buttonStyle" class="btn waves-effect N/A transparent #000000 black-text" type="submit" name="envoyer">join
         </button>
+        <?php if($msg_error != ""){echo "<p>$msg_error</p>";}?>
       </div>
     </form>
     </div>
