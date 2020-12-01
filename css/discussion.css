@@ -180,9 +180,10 @@ article {
   margin-top: -0.2em;
 }
 
-#shop p {
+#textFlame {
   padding: 0 2em 0.5em 2em;
   margin-top: -0.2em;
+  font-size: 1em;
 }
 
 #shop a,
@@ -323,4 +324,66 @@ footer a {
 
 footer ul {
   margin-top: 3em;
+}
+
+/* CSS INSCRIPTION */
+
+#joinus {
+  width: 40%;
+  min-height: 100vh;
+  background-image: url(../images/csm.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.big {
+  color: black;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 3em 0 0 2em;
+}
+
+.textJoin {
+  margin: 1em 8em 0 5em;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+#formJoin {
+  width: 40%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#titleJoin {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
+  margin: 4em 0 0 2em;
+}
+
+.already {
+  margin: -0.1em 0 0 3em;
+}
+
+form {
+  margin: 4em 3em 0 3em;
+}
+
+#buttonStyle {
+  border: solid black 1px;
+  font-family: "Teko", sans-serif;
+  font-size: 1.7em;
+  padding-left: -1em;
+  margin: 1em 0 0 1em;
+}
+
+#logJoin {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }

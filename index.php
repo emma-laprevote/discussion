@@ -19,10 +19,10 @@
       <img id="factorylogo" src="images/factorylogo.png" alt="Logo The factory">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php"><i class="large material-icons">grade</i></a></li>
-        <li><a href="inscription.php"><i class="large material-icons">person_add</i></a></li>
-        <li><a href="connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
-        <li><a href="profil.php"><i class="large material-icons">face</i></a></li>
-        <li><a href="discussion.php"><i class="large material-icons">message</i></a></li>
+        <li><a href="pages/inscription.php"><i class="large material-icons">person_add</i></a></li>
+        <li><a href="pages/connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
+        <li><a href="pages/profil.php"><i class="large material-icons">face</i></a></li>
+        <li><a href="pages/discussion.php"><i class="large material-icons">message</i></a></li>
       </ul>
     </div>
   </nav>
@@ -46,15 +46,15 @@
       <section id="music">
         <h5>#musique.</h5>
         <div>
-            <p><span class="weight">The Streets</span><br>None of Us Are Getting Out of This Life Alive.</p>
+            <p><span class="weight" class="flow-text">The Streets</span><br>None of Us Are Getting Out of This Life Alive.</p>
             <img src="images/thestreets.jpg" id="streets" alt="pochette dernier album the streets">
-            <p class="p3">Neuf ans après son dernier album, THE STREETS revient avec Tame Impala sur un enthousiasmant single 
+            <p class="p3" class="flow-text">Neuf ans après son dernier album, THE STREETS revient avec Tame Impala sur un enthousiasmant single 
             annonciateur d'une mixtape estivale. L'occasion de réentendre la gouaille de Mike Skinner. </p>
         </div>
         <div>
-            <p><span class="weight">Slowthai</span><br>Nothing great about Britain.</p>
+            <p><span class="weight" class="flow-text">Slowthai</span><br>Nothing great about Britain.</p>
             <img src="images/slowthai.jpeg" id="slow" alt="pochette dernier album Slowthai">
-            <p class="p3">Tout ce que l'Angleterre a fait de plus énervé ces deux dernières années semble s'être passé le mot. 
+            <p class="p3" class="flow-text">Tout ce que l'Angleterre a fait de plus énervé ces deux dernières années semble s'être passé le mot. 
             Après le retour en grâce ce matin des kids de Shame, voilà que ce sale gosse de slowthai s'invite à la fête et 
             annonce un nouvel album, attendu le 5 février prochain.</p>
         </div>
@@ -64,9 +64,9 @@
     <section id="present">
         <div id="graffiti">
             <div class="slogan">
-            <p class="p1">LESS ODOR -</p>
-            <p class="p2">MORE</p>
-            <p class="p2">ACTION.</p>
+            <p class="p1" class="flow-text">LESS ODOR -</p>
+            <p class="p2" class="flow-text">MORE</p>
+            <p class="p2" class="flow-text">ACTION.</p>
 
         <div class='membre'>
             <div class='container'>
@@ -89,7 +89,7 @@
             <h5>#chooseyourweaponwisely.</h5>
             <img src="images/logoflame.png" id="logoflame" alt="Logo Flame"><br>
             <img src="images/spray.png" id="spraypaint" alt="Bombe peinture flame">
-            <p id="textFlame">Découvrez la <span class="weight">bombe de peinture Flame Orange</span>, à travers <span class="weight">120 couleurs</span> funky ! 
+            <p id="textFlame" class="flow-text">Découvrez la <span class="weight">bombe de peinture Flame Orange</span>, à travers <span class="weight">120 couleurs</span> funky ! 
                 Il s'agit de la bombe la plus aboutie au monde dans sa catégorie : Sa valve ultra contrôlable, 
                 dévelopée spécialement pour le graffiti est équipée <span class="weight">d'un fat cap d'origine</span>, et permet d'obtenir 
                 des lignes de <span class="weight">2 à 30 centimètres</span>, par simple gestion de la pression. La bombe de peinture 
@@ -102,7 +102,7 @@
             <img src="images/persu.jpg" id="boatgraff" alt="Bateau avec graffiti">
             <h6>Entretien</h6>
             <h2>Persu à la recherche des spots perdus.</h2>
-            <p id="textFlame">Partir en roadtrip pour dénicher des spots vierges, faire des graffs, 
+            <p class="flow-text">Partir en roadtrip pour dénicher des spots vierges, faire des graffs, 
                 prendre des photos… et croiser des chats. C’est le quotidien de Persu, 
                 un graffeur en quête d’aventures qui partage sa passion des lieux abandonnés 
                 avec sa compagne, photographe.</p>
