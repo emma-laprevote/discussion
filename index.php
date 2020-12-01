@@ -64,10 +64,24 @@
     <section id="present">
         <div id="graffiti">
             <div class="slogan">
-            <p>LESS ODOR -</p>
+            <p class="p1">LESS ODOR -</p>
             <p class="p2">MORE</p>
             <p class="p2">ACTION.</p>
+
+        <div class='membre'>
+            <div class='container'>
+                <div class='row'>
+                    <div id='iconeuser' class='col 5 s6'>
+                        <i class='medium material-icons #ffffff white-text'>account_box</i><p id="textuser" class='#ffffff white-text'>Welcome User!</p>
+                    </div>
+                <div id='buttonrow'>
+                    <a href='pages/profil.php' class='waves-effect N/A transparent #ffffff white-text btn'><i class='material-icons left #ffffff white-text'>face</i>MON COMPTE</a>
+                    <a href='pages/discussion.php' class='waves-effect N/A transparent #ffffff white-text btn'><i class='material-icons left #ffffff white-text'>message</i>DISCUSSION</a>
+                </div>
+                </div>
             </div>
+        </div>
+        </div>
         </div>
 
     <article>

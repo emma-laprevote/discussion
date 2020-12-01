@@ -17,6 +17,10 @@ nav {
   margin: auto;
 }
 
+#textuser {
+  font-size: 1em;
+}
+
 /* CSS PAGE ACCUEIL */
 
 aside {
@@ -37,7 +41,7 @@ aside {
   height: 40em;
 }
 
-#graffiti p {
+.p1 {
   color: white;
   font-family: "Archivo Black", sans-serif;
   font-size: 7em;
@@ -49,6 +53,37 @@ aside {
 
 .p2 {
   margin-top: -1.5em;
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 7em;
+}
+
+.membre {
+  margin: -8em 0 0 -12em;
+  height: 5em;
+  width: 100%;
+}
+
+.membre a {
+  font-family: "Teko", sans-serif;
+  margin: 1em 1em 0 1em;
+  border: solid white 1px;
+  font-size: 1.3em;
+}
+
+#iconeuser i {
+  margin-top: 8px;
+}
+
+#iconeuser {
+  display: flex;
+  flex-direction: row;
+}
+
+#iconeuser p {
+  font-size: 1.1em;
+  letter-spacing: 0.7em;
+  margin: 1.5em 0 0 0.5em;
 }
 
 #liens {
@@ -68,13 +103,12 @@ aside {
   color: white;
   font-size: 1em;
   padding: 1.5em 1.5em 1.5em 1.5em;
-  border-bottom: solid 1px white;
 }
 
 #music {
   text-align: left;
   color: white;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 #streets,
@@ -117,7 +151,8 @@ article {
 }
 
 #biography {
-  margin-top: 10em;
+  margin-top: 31.3em;
+  border-top: solid 1px white;
 }
 
 /* CSS ARTICLE SHOP */
