@@ -50,7 +50,7 @@ $msg_error = "";
         <h4 id="titleJoin2">Log In</h4>
         <p class="already">Pas encore inscrit? <a href="inscription.php">Rejoins-nous</a></p>
 
-    <form class="col s12" method="POST" action="connexion.php">
+    <form id="ins" class="col s12" method="POST" action="connexion.php">
       <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">account_circle</i>

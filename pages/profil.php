@@ -1,3 +1,17 @@
+<?php
+session_start();
+$msg_error = "";
+$msg_avatar = "";
+
+  require_once('../php/functions.php');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+
+    if(isset($_POST['envoyer']))
+    {
+        $msg_error = changeUser();
+        $msg_avatar = avatar();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +45,11 @@
   <main id="logJoin">
     
     <div id="joinus3">
-        <p class="big2" class="flow-text">HELLO <span class="graffUser">User !</span></p>
+      <?php if(isset($_SESSION['login'])) {
+        $user = $_SESSION['login'];
+        echo "<p class='big2' class='flow-text'>HELLO <span class='graffUser'>$user !</span></p>";
+      }
+      ?>
         <p class="textJoin2" class="flow-text">Get free access to 370 million pieces of art. Showcase, promote, 
             sell & share your work with over 48 million members.</p>
     </div>
@@ -40,12 +58,12 @@
         <h4 id="titleJoin3">Change your profile</h4>
         <p class="already">Modifie ton profil quand tu veux et comme tu le veux.</p>
 
-    <form class="col s12" method="POST" action="profil.php" enctype="multipart/form-data">
+    <form id="ins" class="col s12" method="POST" action="profil.php" enctype="multipart/form-data">
       <div class="row">
         <div class="file-field input-field">
         <div class="btn">
             <span>File</span>
-            <input type="file">
+            <input type="file" name="avatar">
         </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">
@@ -68,6 +86,8 @@
         </div>
         <button id="buttonStyle" class="btn waves-effect N/A transparent #000000 black-text" type="submit" name="envoyer">Log in
         </button>
+        <?php if($msg_error != ""){echo "<p>$msg_error</p>";}?>
+        <?php if($msg_avatar != ""){echo "<p>$msg_avatar</p>";}?>
       </div>
     </form>
     </div>

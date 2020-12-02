@@ -1,7 +1,12 @@
 <?php
 session_start();
     
+    require_once('php/functions.php');
     $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+
+    if(!empty($_SESSION['login'])) {
+      $userView = viewAvatar();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +29,30 @@ session_start();
     <div class="nav-wrapper #000000 black">
       <img id="factorylogo" src="images/factorylogo.png" alt="Logo The factory">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <?php if(isset($_SESSION['login']) == "") { ?>
+
+      <?php
+      } else { ?>
+        <li><form  method="POST" action="index.php">
+        <button id="buttonStyle2" class="btn waves-effect N/A transparent white-text btn" type="submit" name="deconnect">Déconnexion
+        </button></form></li>
+      <?php
+      }
+      if(isset($_POST['deconnect'])) {
+          session_destroy();
+          header("Location: index.php");
+      }
+      ?>
         <li><a href="index.php"><i class="large material-icons">grade</i></a></li>
+        <?php if(isset($_SESSION['login']) == "") { ?>
         <li><a href="pages/inscription.php"><i class="large material-icons">person_add</i></a></li>
         <li><a href="pages/connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
-        <li><a href="pages/profil.php"><i class="large material-icons">face</i></a></li>
         <li><a href="pages/discussion.php"><i class="large material-icons">message</i></a></li>
+        <?php
+        }else {
+
+        }
+        ?>
       </ul>
     </div>
   </nav>
@@ -85,7 +109,7 @@ session_start();
             <div class='container'>
                 <div class='row'>
                     <div id='iconeuser' class='col 5 s6'>
-                        <i class='medium material-icons #ffffff white-text'>account_box</i><p id='textuser' class='#ffffff white-text'>Hi $user!</p>
+                    <div id='circle'><img id='avat' src='pages/membres/avatar/$userView' alt='avatar utilisateur'></div><p id='textuser' class='#ffffff white-text'>Hello $user!</p>
                     </div>
                 <div id='buttonrow'>
                     <a href='pages/profil.php' class='waves-effect N/A transparent #ffffff white-text btn'><i class='material-icons left #ffffff white-text'>face</i>MON COMPTE</a>
@@ -93,11 +117,11 @@ session_start();
                 </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>";
     }
     ?>
+    </div>
+        </div>
 
     <article>
         <section id="shop">
@@ -183,10 +207,16 @@ session_start();
               <div class="col l4 offset-l2 s12">
                 <ul>
                   <li><a class="black-text darken-4" href="index.php"><i class="material-icons left">flash_on</i>ACCUEIL</a></li>
+                  <?php if(isset($_SESSION['login']) == "") { ?>
                   <li><a class="black-text darken-4" href="inscription.php"><i class="material-icons left">flash_on</i>INSCRIPTION</a></li>
                   <li><a class="black-text darken-4" href="connexion.php"><i class="material-icons left">flash_on</i>CONNEXION</a></li>
-                  <li><a class="black-text darken-4" href="profil.php"><i class="material-icons left">flash_on</i>MON COMPTE</a></li>
-                  <li><a class="black-text darken-4" href="discussion.php"><i class="material-icons left">flash_on</i>FORUM</a></li>
+                  <li><a class="black-text darken-4" href="discussion.php"><i class="material-icons left">flash_on</i>DISCUSSION</a></li>
+                  <?php
+                  }elseif(isset($_SESSION['login']) != "") { ?>
+                  <li><a class="black-text darken-4" href="discussion.php"><i class="material-icons left">flash_on</i>DISCUSSION</a></li>
+                  <?php
+                  }
+                  ?>
                 </ul>
               </div>
             </div>
