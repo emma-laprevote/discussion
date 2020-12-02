@@ -194,3 +194,28 @@ function viewAvatar () {
 
     return $avatarUser;
 }
+
+function addMessage () {
+
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $msg = "";
+    $id = $_SESSION['id'];
+
+    if (!empty($_POST['message'])) {
+
+    $date = date('Y/m/d H:i:s');
+    $comment = htmlspecialchars($_POST['message']);
+
+    $message = $bdd->prepare('INSERT INTO messages (message, id_utilisateur, date) VALUES(:message, :id_utilisateur, :date)');
+    $message->bindValue(':message', $comment, PDO::PARAM_STR);
+    $message->bindValue(':id_utilisateur', $id, PDO::PARAM_INT);
+    $message->bindValue(':date', $date, PDO::PARAM_STR);
+    $message->execute()or die(print_r($message->errorInfo()));
+
+    header('Location: ../pages/discussion.php');
+    $msg = "Votre message a bien été enregistré.";
+
+    }
+    
+    return $msg;
+}

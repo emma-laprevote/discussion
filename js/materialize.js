@@ -15034,12 +15034,23 @@ $(".carousel.carousel-slider").carousel({
   indicators: true,
 });
 
-  var instance = M.Carousel.init({
-    fullWidth: true
-  });
+var instance = M.Carousel.init({
+  fullWidth: true,
+});
 
-  // Or with jQuery
+// Or with jQuery
 
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true
-  });
+$(".carousel.carousel-slider").carousel({
+  fullWidth: true,
+});
+
+$(document).ready(function () {
+  $("input#input_text, textarea#textarea1").characterCounter();
+});
+
+function MaxLengthTextarea(objettextarea, maxlength) {
+  if (objettextarea.value.length > maxlength) {
+    objettextarea.value = objettextarea.value.substring(0, maxlength);
+    alert("Votre texte ne doit pas dépasser " + maxlength + " caractères!");
+  }
+}
