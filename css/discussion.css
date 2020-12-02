@@ -475,7 +475,87 @@ footer ul {
 
 #avat {
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  margin-top: 1em;
+}
+
+/* CSS DISCUSSION */
+
+#formJoin2 {
+  width: 65%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#titleJoin4 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
+  margin: 2em 0 0 2em;
+}
+
+#buttonStyle4 {
+  border: solid black 1px;
+  font-family: "Teko", sans-serif;
+  font-size: 1.7em;
+  padding-left: -1em;
+  margin: -1em 0 0 0;
+}
+
+#joinus4 {
+  width: 35%;
+  min-height: 100vh;
+  background-image: url(../images/cms4.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.big4 {
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 4em 0 0 1em;
+}
+
+.textJoin4 {
+  margin: 0 8em 0 2.5em;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+#userView {
+  font-size: 1em;
+  padding: 1em 0.5em 0 0;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#avat2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.weight2 {
+  font-weight: bold;
+  padding: 1em 0 0 0.5em;
+}
+
+.afficheColumn {
+  margin: 2em 0 0 2em;
+}
+
+.message {
+  box-shadow: 0 4px 6px 0 grey;
+  max-width: 93%;
+  min-height: 5vh;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgb(166, 226, 226);
+  color: black;
 }
