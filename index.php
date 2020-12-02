@@ -1,7 +1,12 @@
 <?php
 session_start();
     
+    require_once('php/functions.php');
     $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+
+    if(!empty($_SESSION['login'])) {
+      $userView = viewAvatar();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +47,6 @@ session_start();
         <?php if(isset($_SESSION['login']) == "") { ?>
         <li><a href="pages/inscription.php"><i class="large material-icons">person_add</i></a></li>
         <li><a href="pages/connexion.php"><i class="large material-icons">assignment_ind</i></a></li>
-        <li><a href="pages/profil.php"><i class="large material-icons">face</i></a></li>
         <li><a href="pages/discussion.php"><i class="large material-icons">message</i></a></li>
         <?php
         }else {
@@ -105,7 +109,7 @@ session_start();
             <div class='container'>
                 <div class='row'>
                     <div id='iconeuser' class='col 5 s6'>
-                        <i class='medium material-icons #ffffff white-text'>account_box</i><p id='textuser' class='#ffffff white-text'>Hi $user!</p>
+                    <div id='circle'><img id='avat' src='pages/membres/avatar/$userView' alt='avatar utilisateur'></div><p id='textuser' class='#ffffff white-text'>Hello $user!</p>
                     </div>
                 <div id='buttonrow'>
                     <a href='pages/profil.php' class='waves-effect N/A transparent #ffffff white-text btn'><i class='material-icons left #ffffff white-text'>face</i>MON COMPTE</a>
@@ -209,7 +213,6 @@ session_start();
                   <li><a class="black-text darken-4" href="discussion.php"><i class="material-icons left">flash_on</i>DISCUSSION</a></li>
                   <?php
                   }elseif(isset($_SESSION['login']) != "") { ?>
-                  <li><a class="black-text darken-4" href="profil.php"><i class="material-icons left">flash_on</i>MON COMPTE</a></li>
                   <li><a class="black-text darken-4" href="discussion.php"><i class="material-icons left">flash_on</i>DISCUSSION</a></li>
                   <?php
                   }
