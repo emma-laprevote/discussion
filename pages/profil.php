@@ -4,7 +4,7 @@ $msg_error = "";
 $msg_avatar = "";
 
   require_once('../php/functions.php');
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
 
     if(isset($_POST['envoyer']))
     {

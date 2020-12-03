@@ -2,7 +2,7 @@
 
 function insertInscription () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $msg = "";
 
     if($_POST['password'] == $_POST['confirm_password']) {
@@ -47,7 +47,7 @@ function insertInscription () {
 
 function connectLogin () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $msg = "";
 
     $login = $_POST['login']; 
@@ -95,7 +95,7 @@ function connectLogin () {
 
 function changeUser () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $msg = "";
 
         if($_POST['password'] == $_POST['confirm_password']) {
@@ -141,7 +141,7 @@ function changeUser () {
 
 function avatar () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $msg = "";
 
     if(isset($_FILES['avatar']) AND !empty($_FILES['avatar']['name'])) {
@@ -183,7 +183,7 @@ function avatar () {
 
 function viewAvatar () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $avatarUser = "";
 
     $request = $bdd->prepare("SELECT avatar FROM utilisateurs where login = '".$_SESSION['login']."' ");
@@ -197,7 +197,7 @@ function viewAvatar () {
 
 function addMessage () {
 
-    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', 'root');
+    $bdd = new PDO('mysql:dbname=discussion;host=localhost', 'root', '');
     $msg = "";
     $id = $_SESSION['id'];
 
